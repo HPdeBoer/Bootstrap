@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+@import url('https://kit.fontawesome.com/a076d05399.js');
+
+body {
+	margin: 0;
+	background: url(gym.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+
+}
+* { box-sizing: border-box; }
+nav ul {
+    list-style: none;
+    padding: 5px;
+    margin: 10px;
+    background-color: white;
+    text-align: center; /* step 6 */
+    border-top: solid 10px;
+    border-color: #00a9a3;
+	  width: 98.5%;
+
+}
+nav li {
+  display: inline-block; /* step 1 */
+  width: 20%; /* step 4 */
+  margin-right: -4px; /* step 5 */
+  color: #00a9a3;
+  border-left: solid 1px;
+  border-right: solid 1px;
+  padding: 4px;
+  
+}
+nav a {
+  display: block; /* step 2 */
+  text-decoration: none; /* step 3 */
+  color: #00a9a3;
+  font-family: fantasy;
+  text-transform: uppercase;
+  font-weight: 500;
+  position: relative;
+
+}
+/* common text style */
+#logo {
+	width: 15%;
+	border: 15px solid black;
+	padding: 50px;
+	margin: 20px;
+	margin-top: -0px;
+	float: right;
+
+}
+li a::after {
+    content:'';
+    width: 0;
+    height: 3px;
+    background-color: coral;
+    margin: auto;
+    display: block;
+
+}
+li a:hover::after { width: 50%; transition: width 0.5s linear; }
+li a:hover { color: coral; transition: 0.5s; }
+.Selected { color: coral; text-decoration-line: underline; }
+.flex-container {
+    display: flex;
+    background-color: rgba(216, 216, 216, 0);
+    width: 70%;
+    height: 350px;
+    margin-left: 15%;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-self: center;
+
+}  
+.flex-container > div {
+    background-color: #969696ca;
+    border-top: solid 20px;
+    border-color: #00a9a37b;
+    margin: 10px;
+    padding: 20px;
+    font-size: 10px;
+    width: 30%;
+    justify-content: space-between;
+    word-wrap: break-word;
+    text-align: center;
+    min-height: 420px;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
+
+}
+h1 { color: coral; font-family: fantasy; font-size: 30px }
+p { color: white; font-family: fantasy; font-size: 15px; }
+.orb {
+    width: 147px;
+    height: 30px;
+    display: inline-block;
+    margin: 0 0.7px;
+    float: left;
+    transition: all .2s ease-out;
+    text-align: center;
+    text-shadow: 2px 2px rgb(148, 0, 0);
+}
+.orb:hover { transform: scale(1.2); }
+.schr { color: white; font-family: fantasy; }
+.sp { color: #c7d8e7; font-family: fantasy; }
+.marquee {
+    height: 40px;
+    width: 100%;
+    background-color: coral;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    margin: 5px auto;
+} 
+.marquee--inner {
+    display: block;
+    width: 200%;
+    margin: 10px 0;
+    position: absolute;
+    animation: marquee 10s linear infinite;
+}
+span { float: left; width: 100%; }
+@keyframes marquee { 0% { left: 0; } 100% { left: -100%; } }
+.footer {
+    background-color: white;
+    background-image: linear-gradient(to right, white, #00a9a3);
+    font-family: fantasy;
+    font-size: 13px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-bottom: solid 10px;
+    border-color: coral;
+    height: 80px;
+
+}
+.footer > ul { height: 5px; color: rgb(82, 82, 82); letter-spacing: 1px; }
+.fa-solid { color: #00a9a3; font-size: 15px; }
+.middle { font-size: 100px; }
+.fap { color: #7ee7e4; font-size: 120px; text-shadow: 2px 2px 3px rgb(0, 0, 0) }
