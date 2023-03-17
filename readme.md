@@ -1,2 +1,2 @@
 # Bootstrap
-Bij Bootstrap heb ik zitten oefenen met carousels en column's!
+Bij het bovenstaand Bootstrap.html bestand heb geoefend met carousels en column's!
